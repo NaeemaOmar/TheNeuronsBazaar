@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+}
+
+:root{
+    --RoseGold: #B76E79
+}
+
+#navBar {
+    background-color: var(--RoseGold)
+}
+
+#navBar a {
+    /* How do I make this work for full as well as half screen? */
+    /* Right now, it works at half screen but is too little at full-screen */
+    padding-inline: 8%;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    padding: 0px;
+}
+#div1 {
+    background-image: url("../BrainImage1.png");
+    background-size: cover; /*100% didn't work so I'm trying this but it also doesnt work*/
+    background-position: auto; /*Center made half the picture disappear*/
+    height: 100vh; /*100px, 100% and 10px have no difference*/
+    background-repeat: no-repeat; /*No difference no matter what I do*/
+    
+}
+
+#heading {
+    font-family: Pixelify Sans;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+
+}
+
+#dancingLeft {
+    font-family: Dancing Script;
+    font-weight: 400px;
+    text-align: left;
+}
+
+#dancingRight {
+    font-family: Dancing Script;
+    font-weight: 400px;
+    text-align: right;
+}
+
+#dancingCenter {
+    font-family: Dancing Script;
+    font-weight: 400px;
+    text-align: center;
+}
+
+#italics {
+    font-style: italic;
+}
+
+#dancingNeonRoseGold {
+    font-weight: 400px;
+    text-align: center;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+    color: black;
+}
+
+#pixelifyRoseGold {
+    font-family: Pixelify Sans;
+    font-size: xx-large;
+    background-color: var(--RoseGold);
+}
+
+#pixelifyNeonRoseGold {
+    font-family: Pixelify Sans;
+    font-size: xx-large;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+}
+
+#pixelifyRightRoseGold {
+    font-family: Pixelify Sans;
+    font-size: xx-large;
+    text-align: right;
+    background-color: var(--RoseGold);
+    padding-right: 0%;
+    margin: 0;
+}
+
+#roseGold {
+    background-color: var(--RoseGold);
+}
+
+#boldNCenterNhighlight {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    background-color: var(--RoseGold);
+}
+
+#strikethrough {
+    text-decoration: line-through;
+}
+
+#div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#clickableImg{
+    border-radius: 15%;
+    height: 200px;
+}
+
+#sec2 {
+    position: relative;
+    display: inline-block;
+}
+
+#sec2 img{
+    display: block;
+}
+
+#textOverlay{
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-family: Pixelify Sans;
+    font-size: xx-large;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+}
