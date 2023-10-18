@@ -106,16 +106,20 @@
 #div2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    
 }
 
 #clickableImg{
     border-radius: 15%;
-    height: 200px;
+    height: 180px;
+    text-align: center;
 }
 
 #sec2 {
     position: relative;
     display: inline-block;
+    grid-column: 1;
 }
 
 #sec2 img{
@@ -153,3 +157,57 @@
     color: black;
 }
 
+#navBarSpacing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    background-color: var(--RoseGold)
+}
+
+#first {
+    grid-column: 1;
+    text-decoration: none;
+    color: black;
+}
+
+#second {
+    grid-column: 2;
+    text-decoration: none;
+    color: black;
+}
+
+#third {
+    grid-column: 3;
+    text-decoration: none;
+    color: black;
+}
+
+#fourth {
+    grid-column: 4;
+    text-decoration: none;
+    color: black;
+}
+
+#fifth {
+    grid-column: 5;
+    text-decoration: none;
+    color: black;
+}
+
+#sec3 {
+    position: relative;
+    display: inline-block;
+    grid-column: 2;
+}
+
+#sec4 {
+    position: relative;
+    display: inline-block;
+    grid-column: 3;
+}
+
+#sec5 {
+    position: relative;
+    display: inline-block;
+    grid-column: 4;
+}
