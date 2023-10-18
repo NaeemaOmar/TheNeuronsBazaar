@@ -211,3 +211,20 @@
     display: inline-block;
     grid-column: 4;
 }
+
+#div4 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#txtOverlay{
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    top: 0%;
+    left: 5%;
+    font-family: Pixelify Sans;
+    font-size: xx-large;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
