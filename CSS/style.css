@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 10px;
 }
 
 :root{
@@ -21,21 +21,16 @@
 .container {
     padding: 0px;
 }
-#div1 {
-    background-image: url("../BrainImage1.png");
-    background-size: cover; /*100% didn't work so I'm trying this but it also doesnt work*/
-    background-position: auto; /*Center made half the picture disappear*/
-    height: 100vh; /*100px, 100% and 10px have no difference*/
-    background-repeat: no-repeat; /*No difference no matter what I do*/
-    
-}
+
 
 #heading {
     font-family: Pixelify Sans;
     font-weight: bold;
     text-align: center;
     text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
-
+    animation-name: fadeIn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #dancingLeft {
@@ -101,13 +96,18 @@
 
 #strikethrough {
     text-decoration: line-through;
+    animation-name: fadeIn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #div2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
     place-items: center;
-    
+    background-color: var(--RoseGold);
+   
 }
 
 #clickableImg{
@@ -120,9 +120,42 @@
     position: relative;
     display: inline-block;
     grid-column: 1;
+    grid-row: 1;
 }
 
 #sec2 img{
+    display: block;
+}
+
+#sec3 {
+    position: relative;
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#sec3 img{
+    display: block;
+}
+
+#sec4 {
+    position: relative;
+    display: inline-block;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#sec4 img{
+    display: block;
+}
+
+#sec5 {
+    position: relative;
+    display: inline-block;
+    grid-template-columns: auto;
+}
+
+#sec5 img{
     display: block;
 }
 
@@ -209,39 +242,43 @@
 #sec5 {
     position: relative;
     display: inline-block;
-    grid-column: 4;
+    
 }
 
 #div4 {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--RoseGold);
+}
+
+#div5 {
+    text-align: center;
+    display: flex`;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: var(--RoseGold);
 }
 
 #buy {
-    grid-column: 1;
     grid-row: 1;
 }
 
 #wires {
-    grid-column: 3;
     grid-row: 1;
 }
 
 #sell {
-    grid-column: 5;
     grid-row: 1;
 }
 
 #rent {
-    grid-column: 2;
     grid-row: 2;
 }
 
 #lend {
-    grid-column: 4;
     grid-row: 2;
 }
 
@@ -277,5 +314,46 @@ table, td, th {
 }
 
 #checkoutBtn {
+    background-color: var(--RoseGold);
+}
+
+/* This is the code for animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+        body {background-color: black;}
+}
+
+#div1 {
+    background-image: url("../BrainImage1.png");
+    background-size: cover;
+    background-position-y: center;
+    background-position: auto; /*Center made half the picture disappear*/
+    height: 100vh; /*100px, 100% and 10px have no difference*/
+    background-repeat: no-repeat; /*No difference no matter what I do*/
+    width: 100vh;
+    margin: 0 auto;
+}
+
+#pixelifyPNeonRoseGold {
+    font-family: Pixelify Sans;
+    text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+}
+
+#div6 {
+    background-color: var(--RoseGold);
+}
+
+#div7 {
     background-color: var(--RoseGold);
 }
