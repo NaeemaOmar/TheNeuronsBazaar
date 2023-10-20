@@ -254,3 +254,15 @@
     font-family: Pixelify Sans;
     font-size: xx-large;
     text-shadow: 0 0 5px var(--RoseGold), 0 0 10px var(--RoseGold), 0 0 15px var(--RoseGold);
+}
+
+#coloredHeading {
+    font-family: Pixelify Sans;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--RoseGold);
+}
+
+#pixelify {
+    font-family: Pixelify Sans;
+}
